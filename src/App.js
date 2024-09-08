@@ -11,6 +11,9 @@ import {
 // Import your components here
 import Todo from './components/Todo';
 import FetchData from './components/Fetch';
+import UsersComponent from './components/User';
+import UserDetailComponent from './components/UserDetail';
+
 
 // Main App Component
 function App() {
@@ -42,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/users" element={<Users />} />
+            <Route path="/user/:id" element={<UserDetail />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
@@ -60,7 +64,11 @@ function About() {
 }
 
 function Users() {
-  return <h2>Users</h2>;
+  return <UsersComponent/>;
+}
+
+function UserDetail() {
+  return <UserDetailComponent/>
 }
 
 export default App;
