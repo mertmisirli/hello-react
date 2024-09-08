@@ -3,12 +3,14 @@ import './App.css';
 
 import Todo from './components/Todo'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FetchData from './components/Fetch';
 
 function App() {
   return (
     
     <div className="App">
 
+      <FetchData />
       <Todo />
 
       <header className="App-header">
